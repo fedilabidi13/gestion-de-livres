@@ -1,0 +1,17 @@
+<ng-template #successDeletionTpl>Livre supprimé avec succés</ng-template>
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Suppression de livre</h5>
+        </div>
+        <div class="modal-body">
+          Voulez-vous vraiment supprimer le livre?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Annuler</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="delete(successDeletionTpl)">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  </div>
